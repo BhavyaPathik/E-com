@@ -10,7 +10,7 @@
   list-style: none;
 }
 body {
-  background: radial-gradient(circle at center, #0a0a0a 0%, #000 100%);
+  background: black;
   font-family: 'Inter', sans-serif;
   color: white;
   display: flex;
@@ -239,4 +239,19 @@ footer {
 }
 #scroll-top:hover {
   transform: translateY(-2px);
+}
+.cursorglow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 255, 47, 0.25) 0%, rgba(0, 255, 47, 0) 80%);
+  pointer-events: none;
+  transform: translate(-50%, -60%);
+  filter: blur(60px);
+  transform: translate(-30%, -30%);
+  transition: transform 0.1s ease-out;
+  z-index: -1;
 }
